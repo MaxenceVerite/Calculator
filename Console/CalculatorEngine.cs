@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Console
 {
-   public class CalculatorEngine
+ 
+    // SLT
+    // C
+    // GUILLAUME
+    // TON
+    // VOISIN
+    // A GAUCHE
+    // LA
+    
+    public class CalculatorEngine
     {
 
 
