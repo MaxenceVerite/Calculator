@@ -66,5 +66,22 @@ namespace Console
 
             return res;
         }
+
+
+        public virtual double Square(int value)
+        {
+            return Math.Pow(value, 2);
+        }
+
+
+        public virtual double SquareRoot(int value)
+        {
+            return Math.Sqrt(value);
+        }
+
+        public virtual double Percentage(double part, double population)
+        {
+            return (part / population) * 100;
+        }
     }
 }

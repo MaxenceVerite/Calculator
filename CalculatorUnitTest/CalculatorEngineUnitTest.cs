@@ -93,5 +93,55 @@ namespace CalculatorUnitTest
             Assert.AreEqual(exp, actual);
         }
 
+
+        [TestMethod]
+        public void TestMethodSquare()
+        {
+            // Elements d'entrés - on déclare les variables et le résultat attendu
+
+            int a = 2;
+            int exp = 4;
+
+            // Calcul
+
+            CalculatorEngine engine = new CalculatorEngine();
+            double actual = engine.Square(a);
+
+            Assert.AreEqual(exp, actual);
+        }
+
+        [TestMethod]
+        public void TestMethodSquareRoot()
+        {
+            // Elements d'entrés - on déclare les variables et le résultat attendu
+
+            int a = 9;
+            int exp = 3;
+
+            // Calcul
+
+            CalculatorEngine engine = new CalculatorEngine();
+            double actual = engine.SquareRoot(a);
+
+            Assert.AreEqual(exp, actual);
+        }
+
+        [TestMethod]
+        public void TestMethodPercentage()
+        {
+            // Elements d'entrés - on déclare les variables et le résultat attendu
+
+            int part = 12;
+            int population = 100;
+            double exp = 12;
+
+            // Calcul
+
+            CalculatorEngine engine = new CalculatorEngine();
+            double actual = engine.Percentage(part,population);
+
+            Assert.AreEqual(exp, actual);
+        }
+
     }
 }
