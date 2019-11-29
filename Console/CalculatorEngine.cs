@@ -7,13 +7,6 @@ using System.Threading.Tasks;
 namespace Console
 {
  
-    // SLT
-    // C
-    // GUILLAUME
-    // TON
-    // VOISIN
-    // A GAUCHE
-    // LA
     
     public class CalculatorEngine
     {
@@ -22,31 +15,49 @@ namespace Console
         /// <summary>
         /// Function to addition two values
         /// </summary>
-        /// <param name="a"> first value </param>
-        /// <param name="b"> 2nd value </param>
+        /// <param name="valueA"> first value </param>
+        /// <param name="valueB"> 2nd value </param>
         /// <returns>the sum of the two values</returns>
-        public int Add(int a, int b)
+        public virtual int Add(int valueA, int valueB)
         {
-            return a+b;
+            return valueA + valueB;
         }
 
-        public int Sub(int a, int b)
+        /// <summary>
+        /// Function to addition two values
+        /// </summary>
+        /// <param name="valueA"> first value </param>
+        /// <param name="valueB"> 2nd value </param>
+        /// <returns>the sum of the two values</returns>
+        public virtual int Sub(int valueA, int valueB)
         {
-            return a - b;
+            return valueA - valueB;
         }
 
-        public int Mul(int a, int b)
+        /// <summary>
+        /// Function to multiply the two value
+        /// </summary>
+        /// <param name="valueA"> first value </param>
+        /// <param name="valueB"> 2nd value </param>
+        /// <returns>the product of the two values</returns>
+        public virtual int Mul(int valueA, int valueB)
         {
-            return a * b;
+            return valueA * valueB;
         }
 
-        public int Div(int a, int b)
+        /// <summary>
+        /// Function to divise the first value by the second one
+        /// </summary>
+        /// <param name="valueA"> first value </param>
+        /// <param name="valueB"> 2nd value </param>
+        /// <returns>the div of the two values</returns>
+        public virtual int Div(int valueA, int valueB)
         {
             int res;
 
-            if(b != 0)
+            if(valueB != 0)
             {
-                res = a / b;
+                res = valueA / valueB;
             }
             else
             {

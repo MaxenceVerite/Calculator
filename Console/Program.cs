@@ -10,6 +10,8 @@ namespace Console
     {
         static void Main(string[] args)
         {
+            CalculatorEngine engine = new CalculatorEngine();
+            int resultat = engine.Add(5, 2);
         }
     }
 }
