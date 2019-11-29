@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Console
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             CalculatorEngine engine = new CalculatorEngine();
             int resultat = engine.Add(5, 2);
+            System.Console.WriteLine(resultat);
         }
     }
 }
